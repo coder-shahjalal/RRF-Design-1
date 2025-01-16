@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+/* Reset Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", serif;
+  width: full;
+}
+
+/* Basic HTML Defaults */
+html {
+  font-size: 16px; /* Base font size (1rem = 16px) */
+  line-height: 1.5; /* Improve readability */
+  scroll-behavior: smooth; /* Smooth scrolling for anchor links */
+}
+
+/* Utility Classes */
+.container {
+  width: 1180px;
+  margin: auto;
+  position: relative;
+}
+
+.navbar {
+  display: flex;
+  height: 100px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar img {
+  width: 100%;
+}
+ul {
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+  margin-right: -30px;
+}
+ul li {
+  margin-right: 30px;
+}
+ul li a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #a6a6a6;
+  padding: 9.5px 1px;
+}
+ul li a:hover {
+  color: #000000;
+  font-size: 18px;
+  transition: all 1s ease-out;
+}
+
+ul li a.active {
+  color: #000000;
+  font-size: 18px;
+}
+
+.btn {
+  color: #a6a6a6;
+  padding: 10.5px 19px;
+}
+
+.signup {
+  background-color: #54bd95;
+  color: #f8f8fa;
+  border-radius: 10px;
+}
+
+.hero-section {
+  display: flex;
+  gap: 20px;
+  width: 100%; /* Ensure the parent container has a width */
+  position: relative;
+  margin-top: 80px;
+}
+
+.left-sidehero {
+  flex: 45%; /* Fixed flex-basis */
+  /* background-color: red; Demo */
+}
+.right-side {
+  flex: 50%; /* Fixed flex-basis */
+  /* background-color: green; Demo */
+  position: relative;
+}
+.right-side img {
+  width: 119%;
+  position: absolute;
+
+  /* Fixed flex-basis */
+  /* background-color: green; Demo */
+}
+
+.hero-section h1 {
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 90px;
+  margin-bottom: 30px;
+}
+.hero-section h1 img {
+  width: 100%;
+}
+
+.hero-section p {
+  width: 461px;
+  font-size: 18px;
+  color: #000000;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+.btn-h {
+  color: #191a15;
+  font-size: 18px;
+  padding: 11px 20px;
+}
+.hbtnleft {
+  background-color: #54bd95;
+  color: #f8f8fa;
+  border-radius: 50px;
+}
+
+.hbtnright::before {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+  background-color: #000000;
+  border-radius: 50%;
+}
